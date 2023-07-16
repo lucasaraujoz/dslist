@@ -21,5 +21,6 @@ public class GameListService {
 		List<GameList> result = gameListRepository.findAll(); // vai receber Game porem tem q entregar um DTO
 		List<GameListDTO> dto = result.stream().map(x -> new GameListDTO(x)).toList(); // trás o dado reduzido 
 		return dto;
-	}
+	}	
+
 }
